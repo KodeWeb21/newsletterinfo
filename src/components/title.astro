@@ -1,0 +1,33 @@
+---
+    const text = Astro.props.text;
+---
+
+<style>
+    @Font-face{
+        font-family: "inika";
+        src: local("inika"),
+        url("public/fonts/Inika/Inika-Bold.ttf") format("opentype");
+    }
+
+    .title{
+        font-family: "inika";
+        font-size: clamp(1rem, 10vw, 2rem); 
+        text-align: center;
+    }
+
+    @media screen and (min-width:768px){
+        .title{
+            margin-top: 50px;
+        }
+    }
+
+    @media screen and (min-width:1024px){
+        .title{
+            margin-top: 70px
+        }
+    }
+</style>
+
+<h1 class="title">
+    {text}
+</h1>
