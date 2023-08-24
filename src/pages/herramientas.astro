@@ -1,0 +1,24 @@
+---
+    import Logo from "../components/logo.astro";
+    import Title from "../components/title.astro";
+    import Card from "../components/card.astro";
+    import "../components/globalStyles.astro";
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Como construir una newsletter</title>
+    </head>
+    <body>
+        <Logo />
+        <Title text="Herramientas"/>
+        <Card textAlt="MailChilmp" cardColor="#FFE01B" cardLink="/public/images/mailchimp.png" cardText="Es una de las plataformas más conocidas y utilizadas para crear y enviar newsletters. Ofrece una interfaz intuitiva, plantillas personalizables, automatización de correos y análisis detallados." />
+        <Card textAlt="convertkit" cardColor="#FB6C72" cardLink="/public/images/convertkit.jpg" cardText="Está enfocado en creadores de contenido y bloggers. Ofrece una experiencia simple y efectiva para crear campañas de correo electrónico, segmentación de suscriptores y automatización." />
+        <Card textAlt="getresponse" cardColor="#41AFE6" cardLink="/public/images/getresponse.png" cardText="Ofrece una combinación de marketing por correo electrónico y embudos de ventas. Permite crear newsletters, páginas de destino y automatización de campañas de marketing."/>
+        <Card textAlt="sendinblue" cardColor="#6B7280" cardLink="/public/images/sendinblue.png" cardText="Es una herramienta completa de marketing por correo electrónico que permite crear newsletters, campañas de marketing y automatización de correos. También ofrece funciones de SMS marketing y chat en línea." />
+        <Card textAlt="aweber" cardColor="#007BC0" cardLink="/public/images/aweber.jpg" cardText="Es una plataforma veterana en el campo del email marketing, que proporciona una variedad de plantillas y funciones para crear newsletters, además de herramientas de automatización y seguimiento de resultados." />
+    </body>
+</html>
