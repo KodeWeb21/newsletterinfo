@@ -1,0 +1,23 @@
+---
+	import Logo from "../components/logo.astro";
+	import Title from "../components/title.astro"
+    import "../components/globalStyles.astro";
+---
+
+
+<html lang="es">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Que es una newsletter</title>
+	</head>
+	<body>
+		<Logo/>
+		<Title text="Que es una Newsletter"/>
+        <p class="content-text">
+            Una newsletter es una publicación periódica enviada por correo electrónico a una lista de suscriptores que están interesados en recibir noticias, actualizaciones y contenido relevante sobre un tema específico o de interés general.
+        </p>
+	</body>
+</html>

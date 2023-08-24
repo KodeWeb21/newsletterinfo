@@ -1,0 +1,31 @@
+---
+    import Logo from "../components/logo.astro";
+    import Title from "../components/title.astro"
+    import "../components/globalStyles.astro";
+---
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Como construir una newsletter</title>
+    </head>
+    <body>
+        <Logo />
+        <Title text="Metricas importantes"/>
+        <p class="content-text">
+            Las métricas importantes que debes tener en cuenta al gestionar una newsletter y evaluar su rendimiento son fundamentales para medir la efectividad de tus campañas de correo electrónico y comprender cómo interactúan los suscriptores con tu contenido. Algunas de las métricas clave son:
+        </p>
+        <ol class="list-order">
+          <li><span class="bold">Tasa de apertura (Open Rate):</span> Esta métrica indica el porcentaje de suscriptores que abrieron tu newsletter en comparación con el número total de correos enviados. Una alta tasa de apertura generalmente indica que tu asunto y contenido son atractivos.</li>
+          <li><span class="bold">Tasa de clics (Click-Through Rate - CTR):</span> Es el porcentaje de suscriptores que hicieron clic en uno o más enlaces dentro de tu newsletter. Un alto CTR muestra que el contenido fue interesante y logró atraer la atención de tus suscriptores.</li>
+          <li><span class="bold">Tasa de rebote (Bounce Rate):</span> Indica el porcentaje de correos que no pudieron ser entregados a los destinatarios debido a problemas con las direcciones de correo electrónico o el servidor. Es importante mantener este porcentaje bajo, ya que altas tasas de rebote pueden afectar la reputación de tu dominio de correo electrónico.</li> 
+          <li><span class="bold">Tasa de cancelación de suscripción (Unsubscribe Rate):</span> Es el porcentaje de suscriptores que optaron por dejar de recibir tu newsletter después de recibir un correo específico. Una tasa alta puede indicar que el contenido no es relevante o que estás enviando correos con demasiada frecuencia.</li>
+          <li><span class="bold">Tasa de crecimiento de la lista de suscriptores (Subscriber Growth Rate):</span> Es el porcentaje de nuevos suscriptores que se unen a tu lista durante un período determinado. Un crecimiento constante y saludable de la lista es un indicador positivo.</li>
+          <li><span class="bold">Tiempo de apertura (Open Time):</span> Esta métrica muestra cuánto tiempo pasa desde el momento en que se envía la newsletter hasta que un suscriptor la abre. Puede proporcionar información sobre los mejores momentos para enviar tus correos y cuándo tu audiencia es más receptiva.</li>
+          <li><span class="bold">Tasa de conversión:</span> Si tu newsletter tiene un objetivo específico, como llevar a los suscriptores a una página de ventas o a realizar una acción particular, esta métrica te dirá cuántos suscriptores cumplieron ese objetivo en relación con el total de correos enviados.</li>
+          <li><span class="bold">Compartir en redes sociales:</span> Si incluyes botones de compartir en redes sociales en tu newsletter, puedes medir cuántos suscriptores comparten tu contenido con sus seguidores, lo que puede ampliar el alcance de tu newsletter.</li>
+        </ol>
+    </body>
+</html>
