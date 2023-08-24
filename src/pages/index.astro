@@ -1,15 +1,36 @@
 ---
+	import Logo from "../components/logo.astro";
+	import Title from "../components/title.astro";
+	import Button from "../components/button.astro";
+	import "../components/globalStyles.astro";
 ---
 
-<html lang="en">
+
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>NewsletterInfo</title>
+		<style>
+			@media screen and (min-width:768px){
+				.container-sections{
+					display: grid;
+					grid-template-columns: repeat(2,1fr);
+					gap: 15px;
+				}
+			}
+		</style>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Logo/>
+		<Title text="Descubre todo lo que necesitas saber para crear newsletters impactantes y efectivas."/>
+		<div class="container-sections">
+			<Button buttonText="Que es una Newsletter" buttonColor="#5FA4FA" linkButton="/que-es-una-newsletter"/>
+			<Button buttonText="Construir una newsletter" buttonColor="#4ADE80" linkButton="/construir-una-newsletter"/>
+			<Button buttonText="Metricas importantes" buttonColor="#6B7280" linkButton="/metricas-importantes"/>
+			<Button buttonText="Herramientas" buttonColor="#111827" linkButton="/what-is-a-newsletter"/>
+		</div>
 	</body>
 </html>
